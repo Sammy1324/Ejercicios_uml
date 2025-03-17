@@ -15,34 +15,37 @@ def main():
         original_support_material="Madera de álamo",
         original_location="Museo Louvre, París")
 
-    petition = input("¿Qué información de la obra desea conocer? ")
+    while True:
+        petition = input("¿Qué información de la obra desea conocer? ")
 
-    if petition.lower() == "title":
-        print(la_gioconda_replica.title)
-    elif petition.lower() == "author":
-        print(la_gioconda_replica.author)
-    elif petition.lower() == "chronological ascription":
-        print(la_gioconda_replica.chronological_ascription)
-    elif petition.lower() == "technique":
-        print(la_gioconda_replica.technique)
-    elif petition.lower() == "sub technique":
-        print(la_gioconda_replica.sub_technique)
-    elif petition.lower() == "support material":
-        print(la_gioconda_replica.support_material)
-    elif petition.lower() == "description":
-        print(la_gioconda_replica.description)
-    elif petition.lower() == "original author":
-        print(la_gioconda_replica.original_author)
-    elif petition.lower() == "original technique":
-        print(la_gioconda_replica.original_technique)
-    elif petition.lower() == "original sub technique":
-        print(la_gioconda_replica.original_sub_technique)
-    elif petition.lower() == "original support material":
-        print(la_gioconda_replica.original_support_material)
-    elif petition.lower() == "original location":
-        print(la_gioconda_replica.original_location)
-    else:
-        print("Petición no válida")
+        if petition.lower() == "title":
+            print(la_gioconda_replica.title)
+        elif petition.lower() == "author":
+            print(la_gioconda_replica.author)
+        elif petition.lower() == "chronological ascription":
+            print(la_gioconda_replica.chronological_ascription)
+        elif petition.lower() == "technique":
+            print(la_gioconda_replica.technique)
+        elif petition.lower() == "sub technique":
+            print(la_gioconda_replica.sub_technique)
+        elif petition.lower() == "support material":
+            print(la_gioconda_replica.support_material)
+        elif petition.lower() == "description":
+            print(la_gioconda_replica.description)
+        elif petition.lower() == "original author":
+            print(la_gioconda_replica.original_author)
+        elif petition.lower() == "original technique":
+            print(la_gioconda_replica.original_technique)
+        elif petition.lower() == "original sub technique":
+            print(la_gioconda_replica.original_sub_technique)
+        elif petition.lower() == "original support material":
+            print(la_gioconda_replica.original_support_material)
+        elif petition.lower() == "original location":
+            print(la_gioconda_replica.original_location)
+        elif petition.lower() == "exit":
+            break
+        else:
+            print("Petición no válida")
     
 
 if __name__ == "__main__":
